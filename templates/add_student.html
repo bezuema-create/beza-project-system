@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+    <h3 class="text-center mb-4">Register New Student</h3>
+    <form method="POST">
+        <div class="mb-3">
+            <input type="text" name="full_name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="mb-3">
+            <input type="text" name="id_number" class="form-control" placeholder="ID Number" required>
+        </div>
+        <div class="mb-3">
+            <input type="text" name="department" class="form-control" placeholder="Department" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Submit Registration</button>
+    </form>
+</div>
+{% endblock %}
